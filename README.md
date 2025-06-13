@@ -2,3 +2,4 @@
 
 ##libraries
 -icomoon
+-googleFonts
