@@ -8,6 +8,7 @@
 
 body{
      font-family: "Open Sans", sans-serif;
+     background-color: rgba(128, 128, 128, 0.306);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -19,4 +20,16 @@ ul{
 }
 a{
     text-decoration: none;
+}
+
+
+/* to add from js */
+.active-element::after{
+display: block;
+content: '';
+position: relative;
+left: 10px;
+width:90%;
+height: 3px;
+background-color: var(--text-color-hover);
 }

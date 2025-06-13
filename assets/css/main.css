@@ -1,5 +1,60 @@
 
-body{
-     font-family: "Open Sans", sans-serif;
+/* header start styling */
+#header{
+ width:100%;
+ position: fixed;
+ background-color: white;
+ border-bottom: 3px solid #ccc;
+
 }
 
+#header .navbar{
+    height: 90px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin:0 auto;
+}
+
+#header .logo{
+display: flex;
+padding-top:10px;
+align-items: center;
+}
+
+#header .navbar .logo a img{
+    width: 88px;
+    border-radius:6px;
+    margin-right: 5px;
+}
+#header .navbar .logo a h1{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin-left: 12px;
+}
+#header .navbar .logo a h1:hover{
+    animation: gradient-text-animation 2s linear infinite;
+}
+
+#header .navbar ul{
+    display: flex;
+    margin-left: 3px;
+    align-items: center;
+
+}
+
+#header .navbar ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    color:var(--text-color);
+    transition: all var(--transition-t-3) ease;
+}
+
+#header .navbar ul li a:hover{
+    color:var(--text-color-hover);
+}
+/* header end styling */

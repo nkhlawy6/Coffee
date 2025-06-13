@@ -1,7 +1,12 @@
 :root{
+    /* colors  */
     --bg-color:#f1f1f1;
     --bg-secondary:#fbdbdb;
     --dark-gray:#333;
     --light-brown:#c7a17a;
     --black:#1f2226;
+    --text-color:rgba(128, 128, 128, 0.607);
+    --text-color-hover:rgba(128, 128, 128, 0.829);
+    /* transition  note transiton-t-3 =0.3s if transition-t-3s=3s */
+    --transition-t-3:0.3s;
 }
