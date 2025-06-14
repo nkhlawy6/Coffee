@@ -1,60 +1,138 @@
-
 /* header start styling */
-#header{
- width:100%;
- position: fixed;
- background-color: white;
- border-bottom: 3px solid #ccc;
-
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid var(--border-b-color);
 }
 
-#header .navbar{
-    height: 90px;
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin:0 auto;
+#header .navbar {
+  height: 90px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-#header .logo{
-display: flex;
-padding-top:10px;
-align-items: center;
+#header .logo {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
 }
 
-#header .navbar .logo a img{
-    width: 88px;
-    border-radius:6px;
-    margin-right: 5px;
+#header .navbar .logo a img {
+  width: 88px;
+  border-radius: 6px;
+  margin-right: 5px;
 }
-#header .navbar .logo a h1{
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--text-color);
-    line-height: 1.1;
-    margin-left: 12px;
+#header .navbar .logo a h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 1.1;
+  margin-left: 12px;
 }
-#header .navbar .logo a h1:hover{
-    animation: gradient-text-animation 2s linear infinite;
-}
-
-#header .navbar ul{
-    display: flex;
-    margin-left: 3px;
-    align-items: center;
-
+#header .navbar .logo a h1:hover {
+  animation: gradient-text-animation 2s linear infinite;
 }
 
-#header .navbar ul li a{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 15px;
-    color:var(--text-color);
-    transition: all var(--transition-t-3) ease;
+#header .navbar ul {
+  display: flex;
+  margin-left: 3px;
+  align-items: center;
 }
 
-#header .navbar ul li a:hover{
-    color:var(--text-color-hover);
+#header .navbar ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: var(--text-color);
+  transition: all var(--transition-t-3) ease;
+}
+
+#header .navbar ul li a:hover {
+  color: var(--text-color-hover);
 }
 /* header end styling */
+
+#home {
+  background: url("/assets/images/home-bg.png") center no-repeat;
+  background-size: 100%;
+  background-color: var(--bg-color);
+}
+
+#home .home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  gap: 3rem;
+  align-items: center;
+  
+}
+
+#home .home-content .text-content .h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.1;
+  direction: rtl;
+  text-shadow: 1px 1px 10px gray;
+}
+
+#home .home-content .text-content .h1 {
+  font-size: 30px;
+  line-height: 1;
+  margin-top: 15px;
+  padding-top: 15px;
+  direction: rtl;
+  border-top: 1px solid var(--border-b-color);
+  text-shadow: 1px 1px 10px rgb(240, 189, 189);
+}
+
+#home .home-content .text-content .pragraph {
+  font-size: 17px;
+  direction: rtl;
+  margin-top: 15px;
+  position: relative;
+}
+
+#home .home-content .text-content .pragraph::after {
+  content: "";
+  width: 100%;
+  height: 53px;
+  background-color: rgba(185, 136, 136, 0.228);
+  display: block;
+  position: absolute;
+  bottom: 0.1px;
+  left: 5px;
+  border-radius: var(--border-radius-3);
+}
+#home .home-content .text-content .h3,
+#home .home-content .text-content .h1,
+#home .home-content .text-content .pragraph {
+  color: var(--dark-gray);
+}
+
+#home .home-content .text-content .btn {
+  display: inline-block;
+  border-radius: var(--border-radius-3);
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: var(--light-brown);
+  color: wheat;
+  transition: var(--transition-t-3);
+  font-weight: bold;
+}
+
+#home .home-content .text-content .btn:hover {
+  color: white;
+}
+#home .home-content .text-content .btn .icon-cart {
+  display: inline-block;
+  margin-left: 5px;
+}
+#home .home-conten img{
+    display: block;
+    width: 50%;
+    
+}
