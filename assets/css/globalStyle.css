@@ -26,7 +26,9 @@ a{
     max-width: 1200px;
     margin: auto;
 }
-
+.text-primary{
+    color:var(--light-brown);
+}
 /* to add from js */
 .active-element::after{
 display: block;
